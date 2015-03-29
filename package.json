@@ -1,0 +1,31 @@
+{
+  "name": "angular-todomvc-typescript",
+  "version": "1.0.0",
+  "description": "A port of todomvc using Typescript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Foxandxss/angular-todomvc-typescript.git"
+  },
+  "keywords": [
+    "angular",
+    "typescript",
+    "todomvc"
+  ],
+  "author": "Jesus Rodriguez <foxandxss@gmail.com> (http://angular-tips.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Foxandxss/angular-todomvc-typescript/issues"
+  },
+  "homepage": "https://github.com/Foxandxss/angular-todomvc-typescript",
+  "devDependencies": {
+    "connect-history-api-fallback": "0.0.5",
+    "gulp": "^3.8.11",
+    "gulp-angular-templatecache": "^1.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-typescript": "^2.5.0",
+    "typescript": "^1.4.1"
+  }
+}

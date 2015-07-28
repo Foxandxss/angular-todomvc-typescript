@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "out": "app.js"
+    },
+    "filesGlob": [
+        "./src/app.ts",
+        "./src/**/*.ts",
+        "./typings/**/*.d.ts"
+    ],
+    "files": [
+        "./src/app.ts",
+        "./src/app.config.ts",
+        "./src/services/todos.service.ts",
+        "./src/todo/todo.controller.ts",
+        "./src/todo/todo.routes.ts",
+        "./src/utils/backend.ts",
+        "./typings/angularjs/angular-mocks.d.ts",
+        "./typings/angularjs/angular-route.d.ts",
+        "./typings/angularjs/angular.d.ts",
+        "./typings/jquery/jquery.d.ts",
+        "./typings/tsd.d.ts"
+    ]
+}

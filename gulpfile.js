@@ -4,21 +4,20 @@ var templates = require('gulp-angular-templatecache');
 var ts        = require('gulp-typescript');
 var html5Mode = require('connect-history-api-fallback');
 
+var tsProject = ts.createProject('tsconfig.json');
+
 var paths = {
   scripts: ['src/app.ts', 'src/**/*.ts'],
   templates: 'src/**/*.tpl.html',
   index: 'src/index.html',
   todoCss: 'src/app.css',
-  definitions: 'typings/**/*.d.ts',
+  definitions: 'typings/tsd.d.ts',
   out: 'tmp/'
 };
 
 gulp.task('scripts', function() {
-  var tsResult = gulp.src(paths.scripts.concat(paths.definitions))
-    .pipe(ts({
-      noExternalResolve: true,
-      out: 'app.js'
-    }));
+  var tsResult = tsProject.src()
+    .pipe(ts(tsProject));
 
   return tsResult.js.pipe(gulp.dest(paths.out));
 });
